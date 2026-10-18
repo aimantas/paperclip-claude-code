@@ -1,0 +1,6 @@
+{
+  "name": "aimantas-paperclip",
+  "description": "Paperclip for Claude Code: company overview, org chart and issues in a pane, with one-press hand-off to Claude Code, Codex or a Paperclip agent.",
+  "owner": { "name": "Aimantas", "url": "https://aimantas.com" },
+  "plugins": [{ "name": "paperclip", "source": "./" }]
+}

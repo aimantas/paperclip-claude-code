@@ -1,0 +1,46 @@
+{
+  "name": "paperclip",
+  "version": "0.2.0",
+  "description": "Paperclip in Claude Code: company overview, org chart and issues in a pane; send an issue to Claude Code, Codex or a Paperclip agent.",
+  "author": {
+    "name": "Aimantas",
+    "url": "https://aimantas.com"
+  },
+  "homepage": "https://github.com/aimantas/paperclip-claude-code",
+  "license": "MIT",
+  "keywords": [
+    "paperclip",
+    "issues",
+    "org-chart",
+    "agents",
+    "mod"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "baseUrl": {
+      "type": "string",
+      "title": "Paperclip URL",
+      "description": "Where your Paperclip server runs.",
+      "default": "http://127.0.0.1:3100"
+    },
+    "company": {
+      "type": "string",
+      "title": "Company",
+      "description": "Issue prefix (AIM), name or id. Leave blank to pick one in the pane.",
+      "default": ""
+    },
+    "apiKey": {
+      "type": "string",
+      "title": "API key",
+      "description": "Only for authenticated deployments. Sent as a Bearer token. Local trusted mode needs none.",
+      "sensitive": true,
+      "default": ""
+    },
+    "refreshSeconds": {
+      "type": "number",
+      "title": "Refresh every (seconds)",
+      "description": "How often the board refreshes. 0 turns it off.",
+      "default": 60
+    }
+  }
+}
